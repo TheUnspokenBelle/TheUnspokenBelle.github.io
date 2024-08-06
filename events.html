@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Unspoken Belle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/events.css"/>
+</head>
+<body>
+  <main>
+    <header id="app-header" class="app-header">
+
+      <div class="background-container">
+        <div id="background" class="background"></div>
+      </div>
+
+      <div class="header-content">
+        <div id="toolbar" class="app-toolbar">
+
+          <div id="title" class="app-title">The Unspoken Belle</div>
+
+          <div id="headerNav">
+            <div class="nav-item" title="Home" onclick="window.location = './home.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-home"></i>
+            </div>
+            <span class="nav-text">Home</span>
+          </div>
+          <div class="nav-item" title="Board" onclick="window.location = './board.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-people-group"></i>
+            </div>
+            <span class="nav-text">Board</span>
+          </div>
+          <!-- <div class="nav-item" title="Archive" onclick="window.location = './archive.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-folder-open"></i>
+            </div>
+            <span class="nav-text">Archive</span>
+          </div> -->
+          <div class="nav-item" title="Events" onclick="window.location = './events.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-calendar-days"></i>
+            </div>
+            <span class="nav-text">Events</span>
+          </div>
+          </div>
+
+          <div id="donateBtn"
+          onclick="document.location='https://cash.app/$unspoken88'">Donate</div>
+        </div>
+      </div>
+    </header>
+  
+  <div class="card">
+    <div class="card-content">
+      <span class="card-inner">
+    <div class="card-title">Back to School Haircuts</div>
+
+    <p>On August 9th, we will be providing haircuts for kids in foster care as they go back to school. All donations will go torwards toiletries and tipping the barbers for their time and skills. The event will take place at the Prostylez Barber Shop (4290 10th Ave. N. #104, Lake Worth Beach, FL 33461). To donate money, click the button at the top right of this page. We are also looking for donations of white t-shirts, briefs, and small-sized socks.</p>
+  </span>
+</div>
+    <img class="card-img one" src="./assets/events/upcoming/haircuts.jpg" width="642" height="962.5"/>
+  </div>
+
+  <!-- <div class="card-main">
+    <div class="card">
+  
+      <div class="card-content">
+      <div class="card-title">Upcoming Event 1</div>
+  
+      <p>Information about Upcoming Event 1.</p>
+      </div>
+    </div> -->
+
+    <!-- <div class="card">
+  
+      <div class="card-content">
+      <div class="card-title">Upcoming Event 3</div>
+  
+      <p>Information about Upcoming Event 3.</p>
+  
+      <button class="event-btn">
+        Sign Up 
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div> -->
+  </div>
+
+  <span class="flex-fill" style="flex-grow: 1;"></span>
+
+  <footer id="app-footer" class="app-footer">
+    <div class="footer-background-container">
+      <div id="footerBackground" class="footer-background"></div>
+    </div>
+
+    <div class="footer-content">
+      <span>Website made by NEXA Web Design.</span>
+      <div class="btn-row" style="width:fit-content">
+        <span>Contact NEXA:</span>
+        <!-- <div class="btn-row"> -->
+        <div class="btn-social gmail" onclick="window.location = 'mailto:thezacharypadgett@gmail.com'" title="thezacharypadgett@gmail.com">
+          <i class="fas fa-envelope"></i>
+          <span class="btn-text">Email</span>
+        </div>
+        <div class="btn-social phone" onclick="window.location = 'tel:+15618951447'" title="(561) 895-1447">
+          <i class="fas fa-phone"></i>
+          <span class="btn-text">Phone</span>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </footer>
+  </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/events.js"></script>
+</body>
+</html>

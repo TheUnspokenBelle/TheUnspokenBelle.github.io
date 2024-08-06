@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Unspoken Belle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/board.css"/>
+</head>
+<body>
+  <main>
+    <header id="app-header" class="app-header">
+
+      <div class="background-container">
+        <div id="background" class="background"></div>
+      </div>
+
+      <div class="header-content">
+        <div id="toolbar" class="app-toolbar">
+
+          <div id="title" class="app-title">The Unspoken Belle</div>
+
+          <div id="headerNav">
+            <div class="nav-item" title="Home" onclick="window.location = './home.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-home"></i>
+            </div>
+            <span class="nav-text">Home</span>
+          </div>
+          <div class="nav-item" title="Board" onclick="window.location = './board.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-people-group"></i>
+            </div>
+            <span class="nav-text">Board</span>
+          </div>
+          <!-- <div class="nav-item" title="Archive" onclick="window.location = './archive.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-folder-open"></i>
+            </div>
+            <span class="nav-text">Archive</span>
+          </div> -->
+          <div class="nav-item" title="Events" onclick="window.location = './events.html'">
+            <div class="icon-button">
+              <i class="icon fas fa-calendar-days"></i>
+            </div>
+            <span class="nav-text">Events</span>
+          </div>
+          </div>
+
+          <div id="donateBtn"
+          onclick="document.location='https://cash.app/$unspoken88'">Donate</div>
+        </div>
+      </div>
+    </header>
+      
+    <div class="card-main">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-inner">
+      <div class="card-title">Sabrina Valbrun, President</div>
+  
+      <p>The President is the head of the board and typically holds the highest position in an organization. They are responsible for leading the board, setting strategic direction, representing the organization externally, and overseeing its overall operations.</p>
+    </span>
+  </div>
+      <!-- <div class="card-img" style="background-image: url(./assets/img/sabrina.jpg); background-position: 0px -120px;">&nbsp;</div> -->
+      <img class="card-img one" src="./assets/img/sabrina.jpg" width="642" height="962.5"/>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <span class="card-inner">
+      <div class="card-title">Tracey Rosario, Vice President</div>
+    
+      <p>The Vice President assists in all aspects and may step in to fulfill President responsibilities when needed. They work together with the President and execute the organization's goals and initiatives.</p>
+    </span>
+  </div>
+      <!-- <div class="card-img" style="background-image: url(./assets/img/tracey.jpg); background-position: 0px -80px;">&nbsp;</div> -->
+      <img class="card-img two" src="./assets/img/tracey.jpg" width="533.5" height="800"/>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <span class="card-inner">
+        <div class="card-title">Courtney Sharp, Director</div>
+    
+        <p>Directors are board members who provide guidance, expertise, and oversight for specific areas or functions within the organization. They may be responsible for specific committees or departments, bringing their knowledge and experience to help shape the organization's strategies and policies.</p>  
+      </span>
+    </div>
+      <!-- <div class="card-img" style="background-image: url(./assets/img/courtney.jpg); background-position: 0px -120px;">&nbsp;</div> -->
+      <img class="card-img three" src="./assets/img/courtney.jpg" width="414" height="606.5"/>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <span class="card-inner">
+      <div class="card-title">Natalie Olivia Titus, Ambassador</div>
+    
+      <p>An Ambassador, in this context, refers to an individual who represents the organization externally, often in diplomatic or public relations roles. They may establish and maintain relationships with stakeholders, promote the organization's interests, and advocate for its mission and values.</p>
+    </span>
+  </div>
+      <!-- <div class="card-img" style="background-image: url(./assets/img/natalie.jpg); background-position: 0px 0px;">&nbsp;</div> -->
+      <img class="card-img four" src="./assets/img/natalie.jpg" width="533.5" height="800"/>
+    </div>
+    </div>
+
+    <span class="flex-fill" style="flex-grow: 1;"></span>
+
+    <footer id="app-footer">
+      <div class="footer-content">
+        <span>Website made by NEXA Web Design.</span>
+        <div class="btn-row" style="width:fit-content">
+          <span>Contact NEXA:</span>
+          <div class="btn-social gmail" onclick="window.location = 'mailto:thezacharypadgett@gmail.com'" title="thezacharypadgett@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span class="btn-text">Email</span>
+          </div>
+          <div class="btn-social phone" onclick="window.location = 'tel:+15618951447'" title="(561) 895-1447">
+            <i class="fas fa-phone"></i>
+            <span class="btn-text">Phone</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/board.js"></script>
+</body>
+</html>

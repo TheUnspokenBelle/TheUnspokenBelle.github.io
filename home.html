@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Unspoken Belle</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <main>
+      <header id="app-header" class="app-header">
+
+        <div class="background-container">
+          <div id="background" class="background"></div>
+        </div>
+
+        <div class="header-content">
+          <div id="toolbar" class="app-toolbar">
+
+            <div id="title" class="app-title">The Unspoken Belle</div>
+
+            <div id="headerNav">
+              <div class="nav-item" title="Home"
+                onclick="window.location = './home.html'">
+                <div class="icon-button">
+                  <i class="icon fas fa-home"></i>
+                </div>
+                <span class="nav-text">Home</span>
+              </div>
+              <div class="nav-item" title="Board"
+                onclick="window.location = './board.html'">
+                <div class="icon-button">
+                  <i class="icon fas fa-people-group"></i>
+                </div>
+                <span class="nav-text">Board</span>
+              </div>
+              <!-- <div class="nav-item" title="Archive"
+                onclick="window.location = './archive.html'">
+                <div class="icon-button">
+                  <i class="icon fas fa-folder-open"></i>
+                </div>
+                <span class="nav-text">Archive</span>
+              </div> -->
+              <div class="nav-item" title="Events"
+                onclick="window.location = './events.html'">
+                <div class="icon-button">
+                  <i class="icon fas fa-calendar-days"></i>
+                </div>
+                <span class="nav-text">Events</span>
+              </div>
+            </div>
+
+            <div id="donateBtn"
+              onclick="document.location='https://cash.app/$unspoken88'">Donate</div>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="card-main">
+        <div class="hor-card-set">
+          <div class="card">
+
+            <div class="card-content">
+              <span class="card-inner">
+              <div class="card-title">About Us</div>
+
+              <p>The Unspoken Belle is a compassionate non-profit organization
+                dedicated to creating brighter futures for underprivileged
+                children and teenagers. With a focus on Haiti, we provide
+                essential tuition <span
+                  class="dots" id="dots1">...</span><span class="more" id="more1">assistance and school
+                  supplies to ensure that
+                  every child has access to quality education and the
+                  opportunity
+                  to thrive. Understanding the unique challenges faced by
+                  teenage
+                  girls in foster care, our foundation offers not only hygiene
+                  products but also valuable mentorship programs. These
+                  initiatives are designed to empower young women with the
+                  confidence and skills they need to navigate life's challenges
+                  with grace and resilience. Additionally, we take pride in
+                  offering pageant and etiquette training for teenage girls,
+                  fostering self-esteem and social skills that will benefit them
+                  in all areas of life. For the young men in foster homes, we
+                  provide free back-to-school haircuts, helping them to start
+                  their academic year with a sense of pride and self-assurance.
+                  At
+                  The Unspoken Belle, we believe in nurturing the whole child,
+                  providing the tools and support needed for all young people to
+                  rise above their circumstances and achieve their
+                  dreams.</span></p>
+                  </span>
+
+              <button onclick="readMore1()" class="read-more" id="readMore1">Read more</button>
+            </div>
+          </div>
+          <div class="card">
+
+            <div class="card-content">
+              <span class="card-inner">
+              <div class="card-title">Mission Statement</div>
+
+              <p> The Unspoken Belle is dedicated to illuminating paths of
+                opportunity for underprivileged children and teenagers in Haiti,
+                by breaking down the barriers to education <span
+                  class="dots" id="dots2">...</span><span class="more" id="more2">and personal
+                  development. Our mission is to ensure that every child,
+                  regardless of their circumstances, has access to the
+                  education,
+                  resources, and mentorship they need to flourish. Through
+                  tuition
+                  assistance, supply of school essentials, and targeted support
+                  programs, we aim to empower the youth with the foundation for
+                  a
+                  brighter, more promising future.</span></p>
+                  </span>
+
+              <button onclick="readMore2()" class="read-more" id="readMore2">Read more</button>
+            </div>
+          </div>
+          <div class="card">
+
+            <div class="card-content">
+              <span class="card-inner">
+              <div class="card-title">Vision Statement</div>
+
+              <p>Our vision is a world where every child and teenager,
+                especially those in the shadows of poverty and neglect, can
+                access the education and personal growth <span
+                class="dots" id="dots3">...</span><span class="more" id="more3">opportunities they
+                deserve. We envision a future where the young individuals we
+                support in Haiti and beyond can overcome their challenges,
+                realize their potential, and contribute positively to their
+                communities. By nurturing their education, self-esteem, and life
+                skills, we strive to create a ripple effect of empowerment,
+                hope, and change that transcends generations.</span></p>
+              </span>
+
+                <button onclick="readMore3()" class="read-more" id="readMore3">Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+
+          <div class="card-content">
+            <!-- <div class="card-title">Contact</div> -->
+
+              <div class="btn-row">
+                <div class="btn-social gmail" onclick="window.location = 'mailto:theunspokenbelle@gmail.com'" title="theunspokenbelle@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                  <span class="btn-text">Email</span>
+                </div>
+                <div class="btn-social phone" onclick="window.location = 'tel:+19543306097'" title="(954) 330-6097">
+                  <i class="fas fa-phone"></i>
+                  <span class="btn-text">Phone</span>
+                </div>
+                <div class="btn-social facebook" onclick="window.location = 'https://www.facebook.com/theunspokenbelle'" title="https://www.facebook.com/theunspokenbelle">
+                  <i class="fab fa-facebook"></i>
+                  <span class="btn-text">Facebook</span>
+                </div>
+                <div class="btn-social instagram" onclick="window.location = 'https://www.instagram.com/theunspokenbellefoundation/'" title="https://www.instagram.com/theunspokenbellefoundation/">
+                  <i class="fab fa-instagram"></i>
+                  <span class="btn-text">Instagram</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="flex-fill" style="flex-grow: 1;"></span>
+
+      <footer id="app-footer">
+        <div class="footer-content">
+          <span>Website made by NEXA Web Design.</span>
+          <div class="btn-row" style="width:fit-content">
+            <span>Contact NEXA:</span>
+            <div class="btn-social gmail" onclick="window.location = 'mailto:thezacharypadgett@gmail.com'" title="thezacharypadgett@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <span class="btn-text">Email</span>
+            </div>
+            <div class="btn-social phone" onclick="window.location = 'tel:+15618951447'" title="(561) 895-1447">
+              <i class="fas fa-phone"></i>
+              <span class="btn-text">Phone</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
