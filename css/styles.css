@@ -1,0 +1,498 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    padding-top: 64px;
+    font-family: arial;
+    background: #eee;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    display: block;
+    background: #3f51b5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    color: #fff;
+    /* height: 500px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.header-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.app-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 64px;
+    padding: 0 16px;
+    /* pointer-events: none; */
+    font-size: 20px;
+}
+
+.app-title {
+    transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    margin-left: 14px;
+    opacity: 1;
+}
+
+/* #donateBtn {
+    padding: 8px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#donateBtn:hover {
+    background-color: #dedede;
+} */
+
+
+#donateBtn {
+    border-radius: 50px;
+    background-color: #dedede;
+    color: black;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    i {
+        margin-top: -2px;
+        pointer-events: none;
+    }
+}
+
+#donateBtn:hover {
+    background-color: #cacaca;
+}
+
+
+.background-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.background {
+    pointer-events: none;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    will-change: transform, opacity;
+}
+
+#background {
+    background-color: #444580;
+    opacity: 1;
+}
+
+#headerNav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-text {
+    font-size: 11px;
+}
+
+.icon-button {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    box-sizing: border-box !important;
+}
+
+.icon-button .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    fill: currentcolor;
+    stroke: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    .card {
+        margin: 0px;
+    }
+}
+
+.hor-card-set {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    .card {
+        margin: 0px;
+        flex-grow: 1;
+    }
+}
+
+
+
+
+
+
+/* .dots {
+    display: none;
+}
+
+.read-more {
+    display: none;
+} */
+
+.more {
+    display: none;
+}
+
+.dots {
+    display: block;
+}
+
+.read-more {
+    width: fit-content;
+    display: block;
+    padding: 8px 20px;
+    margin: 8px 16px 24px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.read-more:hover {
+    background-color: #dedede;
+}
+
+
+
+.btn-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.btn-social {
+    border-radius: 50px;
+    background-color: #dedede;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    i {
+        margin-top: -2px;
+        pointer-events: none;
+    }
+}
+
+.btn-social.gmail {
+    background: #dd4b39;
+    color: white;
+}
+.btn-social.gmail:hover {
+    background-color: #f86653;
+}
+
+.btn-social.phone {
+    background: #00b489;
+    color: white;
+}
+.btn-social.phone:hover {
+    background-color: #18cfa4;
+}
+
+.btn-social.facebook {
+    background: #3B5998;
+    color: white;
+}
+.btn-social.facebook:hover {
+    background-color: #547bd0;
+}
+
+.btn-social.instagram {
+    background: #ea4c89;
+    color: white;
+}
+.btn-social.instagram:hover {
+    background: #fb649e;
+}
+
+
+.card {
+    position: relative;
+    border-radius: 2px;
+    margin: 24px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-content {
+    padding: 16px;
+    background-color: #fff;
+    flex-grow: 1;
+
+    /* Experimantal */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .card-inner {
+    flex-direction: column;
+    display: flex;
+}
+
+.card .card-title {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.card p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    padding: 0 16px;
+}
+
+.half {
+    width: 50%;
+}
+
+.a-down {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.a-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+.app-footer {
+    display: block;
+    background: #3f51b5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0);
+}
+
+*/
+.footer-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        width: fit-content;
+        .btn-row {
+            gap: 10px;
+        };
+        .btn-social {
+            i {
+                margin-top: -1px;
+            };
+            padding: 7px 15px;
+            font-size: 11px;
+        }
+    }
+}
+
+/*
+
+.footer-background-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-background {
+    pointer-events: none;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    will-change: transform, opacity;
+}
+
+#footerBackground {
+    background-color: #444580;
+    opacity: 1;
+} */
+
+
+#app-footer {
+    position: relative;
+    clear: both;
+    display: block;
+    background: #444580;
+    z-index: 3;
+    color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0);
+}
+
+
+/* smartphone */
+@media (max-width: 768px) {
+    #title {
+        display: none;
+    }
+
+    #donateBtn {
+        margin: 20px 0px;
+    }
+
+    .hor-card-set {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .btn-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 10px 50px;
+        font-size: 15px;
+    }
+    .btn-social {
+        gap: 20px;
+        padding: 15px 30px;
+    }
+
+    
+.footer-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    .btn-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        flex-direction: row;
+        width: fit-content;
+        .btn-row {
+            gap: 10px;
+        };
+        .btn-social {
+            i {
+                margin-top: -1px;
+            };
+            padding: 7px 15px;
+            font-size: 11px;
+        }
+    }
+}
+}

@@ -1,0 +1,43 @@
+.event-btn {
+    padding: 8px 20px;
+    margin: 8px 16px 24px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.event-btn:hover {
+    background-color: #dedede;
+}
+
+
+
+
+.card-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.card-img.one {
+    object-position: 100% 30%;
+}
+
+/* smartphone */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+    
+    .card-img {
+        width: 100%;
+    }
+
+    .card-img.one {
+        object-position: 100% 0%;
+    }
+}
